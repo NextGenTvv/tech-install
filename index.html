@@ -58,21 +58,29 @@
 </section>
 
 <section class="section" id="kontakt">
-    <h2>Kontakt</h2>
+  <h2>Kontakt</h2>
 
-    <div class="contact">
-        <p>📞 Telefon:
-            <a href="tel:+385XXXXXXXX">+385 XX XXX XXXX</a>
-        </p>
+  <form class="contact-form"
+        action="https://formsubmit.co/technicalinstall@gmail.com"
+        method="POST">
 
-        <p>📧 Email:
-            <a href="mailto:technicalinstall@gmail.com">
-                technicalinstall@gmail.com
-            </a>
-        </p>
+    <!-- sigurnost / postavke -->
+    <input type="hidden" name="_subject" value="Novi upit – Tech-Install">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
 
-        <p>📍 Područje rada: Hrvatska</p>
-    </div>
+    <input type="text" name="name" placeholder="Ime i prezime" required>
+    <input type="email" name="email" placeholder="Email adresa" required>
+    <textarea name="message" rows="5" placeholder="Vaša poruka..." required></textarea>
+
+    <button type="submit" class="btn">Pošalji upit</button>
+  </form>
+
+  <div class="contact">
+    <p>📞 Telefon: <a href="tel:+385XXXXXXXXX">+385 XX XXX XXXX</a></p>
+    <p>✉️ Email: technicalinstall@gmail.com</p>
+    <p>📍 Područje rada: Hrvatska</p>
+  </div>
 </section>
 
 <footer>

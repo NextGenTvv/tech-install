@@ -171,3 +171,39 @@ footer {
 .contact-form button:hover {
   opacity: 0.9;
 }
+/* HEADER */
+.site-header {
+  background: linear-gradient(135deg, #0b2a45, #0f3d5e);
+  padding: 20px;
+}
+
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* LOGO */
+.logo {
+  height: 70px;
+  width: auto;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+/* TEXT */
+.logo-text h1 {
+  margin: 0;
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.logo-text p {
+  margin: 4px 0 0;
+  color: #cfe9ff;
+  font-size: 14px;
+}

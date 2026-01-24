@@ -207,3 +207,16 @@ footer {
   color: #cfe9ff;
   font-size: 14px;
 }
+@media (max-width: 768px) {
+  .logo {
+    height: 55px;
+  }
+
+  .logo-text h1 {
+    font-size: 24px;
+  }
+
+  .logo-text p {
+    font-size: 13px;
+  }
+}

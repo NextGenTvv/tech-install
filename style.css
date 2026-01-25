@@ -184,18 +184,25 @@ footer {
 }
 /* HEADER */
 .site-header {
-    background: linear-gradient(135deg, #0b2a45, #0f3d5e);
-    padding: 0 20px;
+  background: linear-gradient(135deg, #0b2a45, #0f3d5e);
+  padding: 0;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;      /* 🔑 VERTIKALNO CENTRIRA SVE */
+  justify-content: space-between;
+  min-height: 90px;         /* visina plavog headera */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 
 .logo-wrap {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 80px;
+  display: flex;
+  align-items: center;   /* 🔑 logo točno u sredini plavog */
+  gap: 16px;
 }
 .brand {
     display: flex;

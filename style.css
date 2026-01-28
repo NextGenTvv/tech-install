@@ -356,3 +356,70 @@ footer {
   max-width: 90%;
   max-height: 90%;
 }
+/* =========================
+   GALERIJA – INLINE ZOOM
+========================= */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.35s ease;
+}
+
+/* POVEĆANA SLIKA */
+.gallery-item.active img {
+  transform: scale(1.6);
+  z-index: 2;
+}
+
+/* X GUMB */
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background: rgba(0,0,0,0.65);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+  z-index: 3;
+}
+
+.gallery-item.active .close-btn {
+  display: block;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-item.active img {
+    transform: scale(1.3);
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}

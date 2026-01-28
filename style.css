@@ -121,7 +121,7 @@ footer {
 /* GALERIJA */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* ⬅️ 3 slike u redu */
+  grid-template-columns: repeat(3, 1fr);
   gap: 0;
 }
 
@@ -130,31 +130,34 @@ footer {
   height: 220px;
   object-fit: cover;
   display: block;
-  border-radius: 0;      /* ⬅️ uklanja razmake */
-  box-shadow: none;      /* ⬅️ nema “lebdenja” */
+  border-radius: 0;
+  box-shadow: none;
+  cursor: pointer;
+  transition: transform 0.25s ease;
 }
 
 .gallery img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+  transform: scale(1.03);
 }
 
-/* MOBITEL */
-@media (max-width: 600px) {
-  .gallery img {
-    height: 200px;
-  }
-}
+/* TABLET */
 @media (max-width: 768px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* MOBITEL */
 @media (max-width: 480px) {
   .gallery {
     grid-template-columns: 1fr;
   }
+
+  .gallery img {
+    height: 200px;
+  }
 }
+
 /* KONTAKT FORMA */
 .contact-form {
   max-width: 500px;

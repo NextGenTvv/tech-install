@@ -194,102 +194,58 @@ footer {
 .contact-form button:hover {
   opacity: 0.9;
 }
-/* HEADER */
+/* =========================
+   HEADER / LOGO (FINAL)
+========================= */
+
 .site-header {
   background: linear-gradient(135deg, #0b2a45, #0f3d5e);
-  padding: 0;
+  padding: 30px 0;
 }
 
 .header-inner {
   display: flex;
-  align-items: center;      /* 🔑 VERTIKALNO CENTRIRA SVE */
-  justify-content: space-between;
-  min-height: 90px;         /* visina plavog headera */
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-
-.logo-wrap {
-  display: flex;
   align-items: center;
-  gap: 16px;
-  height: 100%;
-}
-
-.brand {
-    display: flex;
-    align-items: center;
-    height: 100%;
+  justify-content: flex-start;
+  gap: 25px;
 }
 
 /* LOGO */
 .logo {
-    height: 70px;
-    width: auto;
-    background: none;
-    border: none;
-    box-shadow: none;
-    display: block;
+  height: 110px;      /* ← OVDJE JE GLAVNA VELIČINA */
+  width: auto;
+  max-width: none;
+  display: block;
 }
 
-.logo {
-    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.25));
-}
-
-/* TEXT */
+/* TEXT PORED LOGA */
 .logo-text h1 {
+  font-size: 30px;
   margin: 0;
-  font-size: 32px;
-  color: #ffffff;
-  font-weight: 700;
+  color: #fff;
 }
 
 .logo-text p {
   margin: 4px 0 0;
-  color: #cfe9ff;
   font-size: 14px;
+  color: #cfd8dc;
 }
+
+
+/* =========================
+   MOBITEL
+========================= */
+
 @media (max-width: 768px) {
   .logo {
-    height: 55px;
+    height: 85px;
   }
 
   .logo-text h1 {
-    font-size: 24px;
-  }
-
-  .logo-text p {
-    font-size: 13px;
+    font-size: 22px;
   }
 }
-.header-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.brand {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-}
-
-.header-phone {
-    color: #00c6ff;
-    font-weight: 700;
-    font-size: 18px;
-    text-decoration: none;
-}
-@media (max-width: 768px) {
-    .header-phone {
-        font-size: 16px;
-    }
-}
-.header-phone:hover {
-    color: #ffffff;
-}
 /* WHATSAPP FLOAT BUTTON */
 .whatsapp-float {
   position: fixed;

@@ -167,28 +167,24 @@
 <a href="#" class="whatsapp-float" aria-label="WhatsApp">
   <img src="images/whatsapp.svg" alt="WhatsApp kontakt">
 </a>
-  <script>
-const lightbox = document.getElementById('lightbox');
-const lightboxImg = document.getElementById('lightbox-img');
-const closeBtn = document.getElementById('lightbox-close');
-
-document.querySelectorAll('.gallery img').forEach(img => {
+<script>
+document.querySelectorAll('.gallery-item img').forEach(img => {
   img.addEventListener('click', () => {
-    lightboxImg.src = img.src;
-    lightbox.style.display = 'flex';
+    document.querySelectorAll('.gallery-item')
+      .forEach(item => item.classList.remove('active'));
+
+    img.parentElement.classList.add('active');
   });
 });
 
-closeBtn.addEventListener('click', () => {
-  lightbox.style.display = 'none';
-});
-
-lightbox.addEventListener('click', e => {
-  if (e.target === lightbox) {
-    lightbox.style.display = 'none';
-  }
+document.querySelectorAll('.close-btn').forEach(btn => {
+  btn.addEventListener('click', e => {
+    e.stopPropagation();
+    btn.parentElement.classList.remove('active');
+  });
 });
 </script>
+
 
 </body>
 </html>

@@ -170,20 +170,19 @@
 <script>
 document.querySelectorAll('.gallery-item img').forEach(img => {
   img.addEventListener('click', () => {
-    document.querySelectorAll('.gallery-item')
-      .forEach(item => item.classList.remove('active'));
-
-    img.parentElement.classList.add('active');
+    const item = img.closest('.gallery-item');
+    item.classList.toggle('active');
   });
 });
 
 document.querySelectorAll('.close-btn').forEach(btn => {
   btn.addEventListener('click', e => {
     e.stopPropagation();
-    btn.parentElement.classList.remove('active');
+    btn.closest('.gallery-item').classList.remove('active');
   });
 });
 </script>
+
 
 
 </body>

@@ -423,3 +423,27 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+.gallery-item {
+  position: relative;
+  cursor: zoom-in;
+}
+
+.gallery-item.active {
+  z-index: 20;
+}
+
+.gallery-item.active img {
+  transform: scale(1.7);
+  z-index: 21;
+  cursor: zoom-out;
+}
+
+/* blago zatamnjenje okoline */
+.gallery-item.active::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 15;
+}
+

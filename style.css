@@ -334,3 +334,22 @@ footer {
   transform: scale(1.04);
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
+/* LIGHTBOX */
+.gallery a {
+  display: block;
+}
+
+.gallery a:target {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+
+.gallery a:target img {
+  max-width: 90%;
+  max-height: 90%;
+}

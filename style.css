@@ -205,23 +205,29 @@ footer {
 
 .header-inner {
   display: flex;
-  align-items: center;          /* 🔑 KLJUČNO */
+  align-items: center;        /* 🔑 OVO RJEŠAVA PROBLEM */
   justify-content: space-between;
 }
 
-/* LIJEVA STRANA (LOGO + TEKST) */
 .brand {
   display: flex;
-  align-items: center;          /* 🔑 KLJUČNO */
+  align-items: center;        /* 🔑 OVO RJEŠAVA PROBLEM */
   gap: 20px;
 }
 
-/* LOGO */
 .logo {
-  height: 120px;                /* velika veličina */
+  height: 120px;
   width: auto;
   display: block;
 }
+
+.header-phone {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #4fc3f7;
+}
+
 
 /* TEKST */
 .logo-text h1 {

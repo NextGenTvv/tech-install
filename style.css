@@ -194,9 +194,6 @@ footer {
 .contact-form button:hover {
   opacity: 0.9;
 }
-/* =========================
-   HEADER – PORAVNANJE
-========================= */
 
 /* =========================
    HEADER – FINAL
@@ -241,7 +238,9 @@ footer {
   align-items: center;
   font-size: 18px;
   color: #4fc3f7;
+  margin-right: 30px;   /* ⬅️ OVO GA GURA ULIJEVO */
 }
+
 
 
 /* TEKST */

@@ -198,27 +198,42 @@ footer {
    HEADER – PORAVNANJE
 ========================= */
 
+/* =========================
+   HEADER – FINAL
+========================= */
+
 .site-header {
   background: linear-gradient(135deg, #0b2a45, #0f3d5e);
-  padding: 20px 0;
+  padding: 20px 40px;
 }
 
 .header-inner {
   display: flex;
-  align-items: center;        /* 🔑 OVO RJEŠAVA PROBLEM */
+  align-items: center;        /* 🔥 VERTIKALNO PORAVNANJE */
   justify-content: space-between;
 }
 
 .brand {
   display: flex;
-  align-items: center;        /* 🔑 OVO RJEŠAVA PROBLEM */
+  align-items: center;        /* 🔥 LOGO + TEKST U RAVNINI */
   gap: 20px;
 }
 
 .logo {
-  height: 120px;
+  height: 120px;              /* ⬅️ OVDJE MIJENJAŠ VELIČINU */
   width: auto;
   display: block;
+}
+
+.logo-text h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.logo-text p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  opacity: 0.9;
 }
 
 .header-phone {

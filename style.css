@@ -206,8 +206,9 @@ footer {
 
 .header-inner {
   display: flex;
-  align-items: center;        /* 🔥 VERTIKALNO PORAVNANJE */
+  align-items: center;
   justify-content: space-between;
+  padding-right: 40px;   /* ⬅️ OVO RJEŠAVA PROBLEM */
 }
 
 .brand {
